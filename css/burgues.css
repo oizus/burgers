@@ -1,0 +1,338 @@
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+
+* {
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+/*------------------------------------HEADER------------------------------------*/
+
+.cabeçalho {
+    background-color: black;
+    width: 100%;    
+    height: auto;
+    position: fixed;
+    top: 0;
+}
+
+header ul {
+    list-style: none;
+    text-align: center;
+    padding: 0px;
+    margin: auto;   
+}
+
+header ul li {
+    display: inline-block;
+    font-family: 'Shadows Into Light', cursive;  
+}
+
+header ul li a:link,
+header ul li a:visited {
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+}
+
+
+header ul li img {
+    width: 50px;
+    height: 50px;    
+}
+
+.cabeçalho1 {
+    vertical-align: 18px;
+}
+
+/*------------------------------------MAIN (os burgues)------------------------------------*/
+
+.burgues {
+    margin-top: 56px;    
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
+    text-align: center;
+}
+
+.burgues p {
+    margin: 10px;
+    line-height: 2em;
+}
+
+.foto {
+    text-align: center;        
+    margin-left: auto;
+    margin-right: auto;    
+}
+
+.foto img {
+    width: 80%;
+}
+
+.mensagem {    
+    text-align: right;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.mensagem p {
+    margin: 5px;
+    line-height: 2em;
+}
+
+.mensagem p:nth-child(1) {
+    font-size: 13px;
+}
+
+
+/*----------------------------------------FOOTER----------------------------------------*/
+footer {
+    margin-top: 10px;
+}
+
+footer .rodape {
+    background: #121212;
+    color: white;
+}
+
+footer .lugar {
+    text-align: center;
+    padding: 20px;
+}
+
+footer .lugar h3 {
+    padding: 10px;
+}
+
+footer .lugar p {
+    padding: 3px;
+}
+
+/*footer .p {
+    border: 3px solid red;
+}*/
+
+/*footer .p div {
+    width: 33.333333%;
+    border: 3px solid blue;
+}*/
+
+footer .horario {
+    text-align: center;
+    padding: 20px;
+}
+
+footer .horario h3 {
+    padding: 10px;
+}
+
+footer .horario p {
+    padding: 3px;
+    font-size: 14px;
+}
+
+footer .redes {
+    text-align: center;
+    padding: 30px;
+}
+
+footer .redes h3 {
+    text-align: center;
+}
+
+footer ul {
+    text-align: center;
+    list-style: none;
+    padding: 4px;
+}
+
+footer ul li {
+    display: inline-block;
+
+}
+
+footer ul li a:link,
+footer ul li a:visited {
+    display: inline-block;
+    padding: 18px;
+    text-decoration: none;
+    background-repeat: no-repeat;
+    background-position: center 10px;
+    background-size: 25px;
+}
+
+footer a.facebook {
+    background-image: url('../imagens/logos/faceBlack.png');
+}
+
+footer a.instagram {
+    background-image: url('../imagens/logos/instaBlack.png');
+}
+
+footer a.twitter {
+    background-image: url('../imagens/logos/twitterBlack.png');
+}
+
+/*footer a.facebook:hover {
+    background-image: url('../imagens/logos/face.png');
+}
+
+footer a.instagram:hover {
+    background-image: url('../imagens/logos/insta.png');
+}
+
+footer a.twitter:hover {
+    background-image: url('../imagens/logos/twitter.png');
+}*/
+
+
+footer .rodape1 {
+    background: black;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    /*margin-top: 10px;*/
+    font-size: 14px;
+}
+
+
+
+
+/*---------------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------Resolução para telas acima de 1000px-----------------------------------------------*/
+/*---------------------------------------------------------------------------------------------------------------------------*/
+
+
+@media screen and (min-width: 1000px) {
+
+    .container1 {
+        /*margin-top: 76px;/**/
+        flex-direction: row;
+        margin: auto;
+        width: 1200px;        
+        /*margin-left: auto;/**/
+        /* margin-right: auto;/**/        
+    }
+
+    .containerFoto {        
+        flex-direction: row;
+        margin: auto;
+        width: 1200px;        
+        height: 760px;       
+    }
+    
+
+    /*-----------------------------------------------HEADER-----------------------------------------------*/
+
+    header ul {
+        margin: auto;
+        width: 1200px;        
+    }
+
+    header ul li {
+        font-size: 15px;
+    }
+
+    header ul li a:link,
+    header ul li a:visited {
+        /*display: inline-block;*/
+        padding: 20px;
+    }
+
+    header ul li a:hover {
+        color: #0485EA;
+        text-shadow:
+            0 0 7px #0485EA,
+            0 0 10px #0485EA,
+            0 0 21px #0485EA,
+            0 0 42px #0485EA,
+            0 0 82px #0485EA,
+            0 0 92px #0485EA,
+            0 0 102px #0485EA,
+            0 0 151px #0485EA;
+    }    
+
+    /*------------------------------------------MAIN (os burgues)------------------------------------------*/
+    .burgues {
+        margin-top: 56px;       
+        margin-left: auto;
+        margin-right: auto;
+        padding: 5px;
+        text-align: center;
+    }
+
+    .burgues p {
+        padding: 10px;
+        padding-left: 250px;
+        padding-right: 250px;
+        line-height: 2em;
+    }
+
+    
+
+    .foto {
+        width: 70%;
+        height: 600px;
+    }
+
+    .foto img {
+        width: 60%;
+    }
+    
+    .mensagem {
+        width: 42%;
+    }
+
+    .mensagem p:nth-child(1) {
+        font-size: 16px;
+    }
+
+    /*----------------------------------------------FOOTER----------------------------------------------*/
+    footer {
+        margin-top: 10px;
+    }
+
+    footer .p div {
+        width: 33.333333%;       
+    }
+
+    footer a.facebook {
+        background-image: url('../imagens/logos/faceBlack.png');
+    }
+
+    footer a.instagram {
+        background-image: url('../imagens/logos/instaBlack.png');
+    }
+
+    footer a.twitter {
+        background-image: url('../imagens/logos/twitterBlack.png');
+    }
+
+    footer a.facebook:hover {
+        background-image: url('../imagens/logos/face.png');
+    }
+
+    footer a.instagram:hover {
+        background-image: url('../imagens/logos/insta.png');
+    }
+
+    footer a.twitter:hover {
+        background-image: url('../imagens/logos/twitter.png');
+    }
+
+    footer .horario p {
+        font-size: 16px;
+    }
+
+    footer .rodape1 {
+        font-size: 16px;
+    }
+}
